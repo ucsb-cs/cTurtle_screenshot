@@ -19,6 +19,9 @@ to accomplish that task:
 
     SAVEIMAGE=example_output python example.py
 
+Note that the image is saved to the same directory as the python script you are
+running; it is not always the current directory.
+
 
 ### Running Headless
 
