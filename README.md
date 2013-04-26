@@ -1,16 +1,20 @@
-The `cTurtle` python package contained within this directory provides a drop-in
-replacement for the original cTurtle.py module with the addition of providing a
-transparent ability to save PNG images of the final canvas state.
+The `cTurtle` python package and `turtle.py` module contained within this
+directory provides a drop-in replacement for the original cTurtle.py module and
+turtle module respectively with the addition of providing a transparent ability
+to save PNG images of the final canvas state.
 
-To use this package simply replace your existing cTurtle.py with the directory
-cTurtl. You will also need to have the `convert` program provided by
+To use this either either of these replacements simply replace your existing
+cTurtle.py with the directory cTurtle. For `turtle` just drop the file
+`turtle.py` into the directory with your script. For either cTurtle or turtle,
+you will also need to copy the `turtlecapture.py` file into the same
+directory. You will also need to have the `convert` program provided by
 imagemagick on your system's path in order for the PNG to be saved.
 
-By default, the modified cTurtle package will behave exactly as
-before. However, when the environment variable SAVEIMAGE is set, an PNG image
-will be saved to the same location as whatever python program you run is
-contained. The image name will be whatever value you set to the SAVEIMAGE
-environment variable with `.png` appended.
+By default, the modified module/package will behave exactly as before. However,
+when the environment variable SAVEIMAGE is set, an PNG image will be saved to
+the same location as whatever python program you run is contained. The image
+name will be whatever value you set to the SAVEIMAGE environment variable with
+`.png` appended.
 
 For instance, if you want to save a snapshot as `example_output.png` of the
 window resulting from the program `example.py`, you need only set the
